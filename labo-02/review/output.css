@@ -1,0 +1,188 @@
+:root {
+  --papier: #fbf7f0;
+  --inkt: #2b2b2b;
+  --gedempt: #6b6b6b;
+  --accent: #b5451b;
+  --zebra: #f1e9dc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* header */
+header {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--inkt);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.slogan {
+  margin: 0.5rem 0 0;
+  color: var(--gedempt);
+  font-style: italic;
+}
+
+/* navigatie */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--inkt);
+  text-decoration: underline;
+}
+
+/* koppen */
+h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 1.75rem 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main h2:first-child {
+  margin-top: 2rem;
+}
+
+/* tekst */
+p {
+  margin: 0 0 1rem;
+}
+
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+strong {
+  color: var(--accent);
+}
+
+ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.4rem;
+}
+
+/* links in main */
+main a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+main a:hover,
+main a:focus {
+  background: var(--accent);
+  color: var(--papier);
+}
+
+/* de kaart */
+.kaart {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.kaart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.kaart li:nth-child(odd) {
+  background: var(--zebra);
+}
+
+.prijs {
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--gedempt);
+  color: var(--gedempt);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0 0 0.25rem;
+}
+
+footer a {
+  color: var(--gedempt);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--accent);
+}
+
+@media (max-width: 30rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

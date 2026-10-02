@@ -42,14 +42,16 @@ de lettergrote van de letters ik moest ze vergelijken met de screenshot
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+Een achtergrondkleur een tekstkleur en een accentkleur zodat alles leesbaar is en alleen de navigatie opvalt.
 - Wat verandert er in je site als je één token wijzigt?
+Alles wat dat token gebruikt verandert tegelijk op alle vier de pagina s.
 
 ## Thuis: R2.3 (met AI)
 
 Prompt en onbewerkte output staan in `review/`. Minstens vijf bevindingen, elk met een verwijzing naar de sectie of het foutnummer:
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Het tokenblok bevat alleen kleuren. Georgia en de regelhoogte staan letterlijk in `body` (2.9).
+2. De lettertypes zijn omgedraaid: tekst in Georgia, terwijl koppen Georgia en tekst Verdana moeten zijn (2.6).
+3. Er staan dingen in die niet in het screenshot zitten: breedtes, marges, padding, randen, flexbox en een mediaquery (hoofdstuk 3).
+4. De basismaat is 1.125rem en er staan maten zoals 1.3rem en 0.95rem, geen veelvouden van 0,25rem (2.8).
+5. Het ziet er anders uit dan het screenshot: h1 in hoofdletters, gecentreerde header, vette prijzen in plaats van cursief en gedempt (2.1).
