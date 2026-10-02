@@ -1,16 +1,16 @@
 # Labo 2 - reflecties
 
-Naam: (jouw naam)
+Naam: Rayan Amairi
 
 ## 2. Selectors lezen
 
 Welke elementen raakt elke selector? Eén zin per selector.
 
-- a. `header nav ul li a`: 
-- b. `article > p`: 
-- c. `.uren li:nth-child(3)`: 
-- d. `h2 ~ p`: 
-- e. `.rassen li:first-child`: 
+- a. `header nav ul li a`: de drie links in de navigatie in de header
+- b. `article > p`: de vier paragrafen die rechtstreeks in de article staan
+- c. `.uren li:nth-child(3)`: het derde item in de lijst met openingsuren
+- d. `h2 ~ p`: elke paragraaf die na de h2 is
+- e. `.rassen li:first-child`: het eerste li van elke lijst
 
 ## 3. Voorspel, dan kijk
 
@@ -18,23 +18,26 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
-| 9 | | | | |
-| 10 | | | | |
+| 1 | groen | herkomst: mijn regel wint van de standaardstijl van de browser | groen | ja |
+| 2 | blauw | volgorde: zelfde specificiteit, de laatste regel wint | blauw | ja |
+| 3 | rood | specificiteit: een class wint van een element | rood | ja |
+| 4 | rood | iets anders: `.v4 > a` raakt niets, want de a is geen direct kind van .v4 | rood | ja |
+| 5 | blauw | specificiteit: een id wint van drie classes | blauw | ja |
+| 6 | blauw | overerving: een regel die direct op het element staat, wint van een geërfde waarde | blauw | ja |
+| 7 | rood | overerving: de blockquote erft de kleur van .v7 | rood | ja |
+| 8 | blauw | specificiteit: het style-attribuut wint van elke selector | blauw | ja |
+| 9 | rood | herkomst: `!important` wint van de gewone regel | rood | ja |
+| 10 | groen | iets anders: de puntkomma na 1.5rem ontbreekt, dus die declaratie is ongeldig en wordt genegeerd | groen, lettergrootte blijft normaal | ja |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
+Alles juist. Vraag 10 duurde het langst
 
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+ Voor de links in de navigatie koos ik nav a een class kon niet want ik mocht de HTML niet wijzigen 
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+de lettergrote van de letters ik moest ze vergelijken met de screenshot
 
 ## 6. Je site
 
