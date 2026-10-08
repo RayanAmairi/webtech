@@ -1,8 +1,107 @@
-/* stijl.css - labo 3, landing (reset.css is linked before this file) */
-
-/* === tokens === */
 :root {
-
+  --kleur-banner: #c8b8ff;
+  --kleur-banner-link: #5551ff;
+  --kleur-hero: #779cee;
+  --kleur-tekst: #000000;
+  --kleur-knop: #000000;
+  --kleur-knop-hover: #333333;
+  --kleur-knop-tekst: #ffffff;
+  --font-tekst: Arial, sans-serif;
 }
 
-/* === your rules === */
+body {
+  font-family: var(--font-tekst);
+  color: var(--kleur-tekst);
+}
+
+.banner {
+  background-color: var(--kleur-banner);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.banner a {
+  color: var(--kleur-banner-link);
+}
+
+.banner a:hover,
+.banner a:focus,
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+header {
+  text-align: right;
+  padding: 1.25rem 2rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+nav a {
+  color: var(--kleur-tekst);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+main {
+  min-height: 80vh;
+  background-color: var(--kleur-hero);
+}
+
+article,
+.afbeelding {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+article {
+  padding: 4rem;
+}
+
+.bovenkop {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+.afbeelding {
+  padding-top: 4rem;
+}
+
+.afbeelding img {
+  width: 70%;
+}
+
+.knop {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--kleur-knop);
+  color: var(--kleur-knop-tekst);
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.knop:hover,
+.knop:focus {
+  background-color: var(--kleur-knop-hover);
+}

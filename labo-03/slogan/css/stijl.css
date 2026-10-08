@@ -1,8 +1,51 @@
-/* stijl.css - labo 3, slogan (reset.css is linked before this file) */
-
-/* === tokens === */
 :root {
-
+  --kleur-tekst: #282827;
+  --kleur-streep: #fccc00;
+  --kleur-knop: #000000;
+  --kleur-knop-hover: #333333;
+  --kleur-knop-tekst: #ffffff;
+  --font-tekst: Arial, sans-serif;
 }
 
-/* === your rules === */
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 12rem 1rem 0;
+  font-family: var(--font-tekst);
+  color: var(--kleur-tekst);
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h2 span {
+  display: inline-block;
+  line-height: 1;
+  border-bottom: 0.5rem solid var(--kleur-streep);
+  border-radius: 0 0 50% 50%;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--kleur-knop);
+  color: var(--kleur-knop-tekst);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--kleur-knop-hover);
+}
